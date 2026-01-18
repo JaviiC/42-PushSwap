@@ -71,7 +71,7 @@ El algoritmo debe cumplir con los siguientes requisitos de eficiencia:
 | 50 números          | 500 operaciones    | ⭐⭐⭐⭐⭐ |
 | 50 números          | > 500 operaciones    | ⭐⭐⭐ |
 | 100 números        | 700 operaciones     | ⭐⭐⭐⭐⭐ |
-| 500 números        | 1500 operaciones     | ⭐⭐⭐⭐⭐ |
+| 500 números        | 5500 operaciones     | ⭐⭐⭐⭐⭐ |
 | 1000 números       | 12500 operaciones  | ⭐⭐⭐⭐⭐ |
 
 ## 🎥 Visualización
