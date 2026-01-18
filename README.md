@@ -4,7 +4,17 @@ Un proyecto de algoritmo de ordenación eficiente utilizando dos pilas y un conj
 
 ## 📋 Descripción
 
-Push_Swap es un proyecto que consiste en ordenar datos en una pila, con un conjunto limitado de instrucciones y utilizando el menor número de acciones posible. El objetivo es manipular los valores entre dos pilas y ordenarlos de forma óptima.
+**Push_Swap** es un desafío algorítmico que pone a prueba tu capacidad de optimización y pensamiento lógico. El reto consiste en **ordenar una lista de números enteros** utilizando únicamente **dos pilas** (stack A y stack B) y un **conjunto muy limitado de operaciones**. 
+
+**La clave está en encontrar el algoritmo más eficiente** que ordene los números con el **menor número de movimientos posible**. Ya no se trata solo de ordenar de la manera más rápida, sino de hacerlo de la forma más inteligente y optimizada.
+
+### 💡 ¿Por qué es interesante?
+
+Este proyecto te obliga a:
+- Pensar en **complejidad algorítmica** y optimización
+- Diseñar estrategias diferentes según la cantidad de números
+- Balancear entre **simplicidad del código** y **eficiencia del resultado**
+- Entender profundamente las **estructuras de datos** tipo pila (stack)
 
 ## 🎯 Operaciones Permitidas
 
@@ -54,30 +64,25 @@ El algoritmo debe cumplir con los siguientes requisitos de eficiencia:
 
 | Cantidad de números | Operaciones máximas | Nota |
 |---------------------|---------------------|------|
-| 3 números          | 3 operaciones       | ⭐⭐⭐⭐⭐ |
+| 3 números          | 3 operaciones         | ⭐⭐⭐⭐⭐ |
+| 3 números          | > 3 operaciones         | ⭐ |
 | 5 números          | 12 operaciones      | ⭐⭐⭐⭐⭐ |
-| 100 números        | < 700 operaciones   | ⭐⭐⭐⭐⭐ |
-| 100 números        | < 900 operaciones   | ⭐⭐⭐⭐ |
-| 100 números        | < 1100 operaciones  | ⭐⭐⭐ |
-| 100 números        | < 1300 operaciones  | ⭐⭐ |
-| 100 números        | < 1500 operaciones  | ⭐ |
-| 500 números        | < 5500 operaciones  | ⭐⭐⭐⭐⭐ |
-| 500 números        | < 7000 operaciones  | ⭐⭐⭐⭐ |
-| 500 números        | < 8500 operaciones  | ⭐⭐⭐ |
-| 500 números        | < 10000 operaciones | ⭐⭐ |
-| 500 números        | < 11500 operaciones | ⭐ |
+| 5 números          | > 12 operaciones      | ⭐⭐ |
+| 50 números          | 500 operaciones    | ⭐⭐⭐⭐⭐ |
+| 50 números          | > 500 operaciones    | ⭐⭐⭐ |
+| 100 números        | 700 operaciones     | ⭐⭐⭐⭐⭐ |
+| 500 números        | 1500 operaciones     | ⭐⭐⭐⭐⭐ |
+| 1000 números       | 12500 operaciones  | ⭐⭐⭐⭐⭐ |
 
 ## 🎥 Visualización
 
-### Visualizador 1
+### Ordenación de 50, 100 y 500 números
 
-https://github.com/JaviiC/42-PushSwap/assets/Push_Swap_visualizer_1.mp4
+https://github.com/JaviiC/42-PushSwap/raw/master/assets/Push_Swap_visualizer_1.mp4
 
-### Visualizador 2
+### Ordenación de 1000 números
 
-https://github.com/JaviiC/42-PushSwap/assets/Push_Swap_visualizer_2.mp4
-
-> **Nota:** Los vídeos se reproducen automáticamente en la vista del README de GitHub. Si no se visualizan, asegúrate de que la ruta sea: `https://github.com/JaviiC/42-PushSwap/raw/main/assets/nombre-video.mp4`
+https://github.com/JaviiC/42-PushSwap/raw/master/assets/Push_Swap_visualizer_2.mp4
 
 ## 🛠️ Algoritmo Implementado
 
@@ -86,7 +91,7 @@ El algoritmo utilizado se basa en [describe brevemente tu estrategia]:
 1. **Casos pequeños (≤3 elementos)**: Ordenación directa con casos hardcodeados
 2. **Casos medianos (4-5 elementos)**: Optimización específica
 3. **Casos grandes (>5 elementos)**: 
-   - [Tu algoritmo: Turk, Radix, Chunk-based, etc.]
+   - Bubble Sort + Ksort
    - División en chunks
    - Ordenación optimizada
    - Minimización de movimientos
@@ -95,24 +100,26 @@ El algoritmo utilizado se basa en [describe brevemente tu estrategia]:
 
 ```
 .
+├── .vscode/
+├── assets/
+│   ├── Push_Swap_visualizer_1.mp4
+│   └── Push_Swap_visualizer_2.mp4
+├── libft/
 ├── Makefile
-├── includes/
-│   └── push_swap.h
-├── srcs/
-│   ├── main.c
-│   ├── operations/
-│   │   ├── push.c
-│   │   ├── swap.c
-│   │   ├── rotate.c
-│   │   └── reverse_rotate.c
-│   ├── algorithm/
-│   │   ├── sort_small.c
-│   │   ├── sort_large.c
-│   │   └── utils.c
-│   └── parsing/
-│       ├── input_check.c
-│       └── error_handling.c
-└── README.md
+├── README.md
+├── error.c
+├── find_utils.c
+├── free.c
+├── init.c
+├── is_sorted.c
+├── ksort.c
+├── list_utils.c
+├── main.c
+├── moves.c
+├── push_swap.c
+├── push_swap.h
+├── small_sort.c
+└── validate_args.c
 ```
 
 ## ✅ Requisitos
@@ -137,21 +144,10 @@ ARG=$(seq 1 100 | shuf | tr '\n' ' '); ./push_swap $ARG | wc -l
 ./push_swap 1 999999999999  # Overflow
 ```
 
-## 📚 Recursos Útiles
-
-- [Push_Swap Visualizer](https://github.com/o-reo/push_swap_visualizer)
-- [Push_Swap Tester](https://github.com/LeoFu9487/push_swap_tester)
-
-## 👤 Autor
-
-**Tu Nombre**
-- GitHub: [@JaviiC](https://github.com/JaviiC)
-- 42 Intra: tu_login
-
 ## 📄 Licencia
 
 Este proyecto es parte del currículum de 42 School.
 
 ---
 
-⭐ Si te ha servido este proyecto, ¡dale una estrella!
+⭐ Si te ha molado este proyecto, ¡dale una estrella!
