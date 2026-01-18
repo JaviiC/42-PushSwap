@@ -71,13 +71,13 @@ El algoritmo debe cumplir con los siguientes requisitos de eficiencia:
 
 ### Visualizador 1
 
-https://github.com/tu-usuario/tu-repo/assets/Push_Swap_visualizer_1.mp4
+https://github.com/JaviiC/42-PushSwap/assets/Push_Swap_visualizer_1.mp4
 
 ### Visualizador 2
 
-https://github.com/tu-usuario/tu-repo/assets/Push_Swap_visualizer_2.mp4
+https://github.com/JaviiC/42-PushSwap/assets/Push_Swap_visualizer_2.mp4
 
-> **Nota:** Los vídeos se reproducen automáticamente en la vista del README de GitHub. Si no se visualizan, asegúrate de que la ruta sea: `https://github.com/tu-usuario/tu-repo/raw/main/assets/nombre-video.mp4`
+> **Nota:** Los vídeos se reproducen automáticamente en la vista del README de GitHub. Si no se visualizan, asegúrate de que la ruta sea: `https://github.com/JaviiC/42-PushSwap/raw/main/assets/nombre-video.mp4`
 
 ## 🛠️ Algoritmo Implementado
 
@@ -145,7 +145,7 @@ ARG=$(seq 1 100 | shuf | tr '\n' ' '); ./push_swap $ARG | wc -l
 ## 👤 Autor
 
 **Tu Nombre**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
+- GitHub: [@JaviiC](https://github.com/JaviiC)
 - 42 Intra: tu_login
 
 ## 📄 Licencia
