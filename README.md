@@ -78,11 +78,11 @@ El algoritmo debe cumplir con los siguientes requisitos de eficiencia:
 
 ### Ordenación de 50, 100 y 500 números
 
-https://github.com/JaviiC/42-PushSwap/raw/master/assets/Push_Swap_visualizer_1.mp4
+https://github.com/user-attachments/assets/8d845b16-0067-41ff-aff5-ca9306fb03c2
 
 ### Ordenación de 1000 números
 
-https://github.com/JaviiC/42-PushSwap/raw/master/assets/Push_Swap_visualizer_2.mp4
+https://github.com/user-attachments/assets/b3b2a429-b0d6-4ad4-873d-1a67cf79020a
 
 ## 🛠️ Algoritmo Implementado
 
